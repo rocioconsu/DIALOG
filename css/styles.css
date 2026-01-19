@@ -7,9 +7,17 @@
     --neutral: #c7c7c7;
 }
 
-.text-dark-blue { color: var(--dark-blue); }
-.text-cyan { color: var(--cyan-accent); }
-.letter-spacing-lg { letter-spacing: 0.15em; }
+.text-dark-blue {
+    color: var(--dark-blue);
+}
+
+.text-cyan {
+    color: var(--cyan-accent);
+}
+
+.letter-spacing-lg {
+    letter-spacing: 0.15em;
+}
 
 body {
     font-family: 'Inter', sans-serif;
@@ -26,7 +34,7 @@ p {
 h2 {
     font-family: 'Playfair Display', serif;
     font-size: 5rem;
-    color: var(--dark-blue); 
+    color: var(--dark-blue);
 }
 
 
@@ -39,7 +47,7 @@ h1 {
 h3 {
     font-family: 'Playfair Display', serif;
     font-size: 5rem;
-    color: #ffffff; 
+    color: #ffffff;
 }
 
 .text-dark-blue {
@@ -88,7 +96,7 @@ h3 {
     content: "";
     position: absolute;
     inset: 0;
-    background: rgba(0,0,0,0.45);
+    background: rgba(0, 0, 0, 0.45);
 }
 
 .hero .container {
@@ -187,9 +195,9 @@ h3 {
 .theory-card {
     background: var(--light-blue);
     border: 1px solid var(--border-color) !important;
-    border-bottom: 5px solid #38BDF8 !important;
-    padding: 1.5rem 1.2rem; 
-    height: 100%;
+    border-bottom: 5px solid var(--cyan-accent) !important;
+    padding: 1.5rem 1.2rem;
+    height: auto;
     border-radius: 10px;
     transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
     cursor: pointer;
@@ -203,7 +211,7 @@ h3 {
     transform: translateY(-10px);
     border-color: var(--border-color);
     background-color: var(--cyan-accent);
-    border-bottom-color: #0EA5E9 !important;
+    border-bottom-color: #2295c6 !important;
     box-shadow: 0 20px 40px rgba(15, 23, 42, 0.1);
 }
 
@@ -225,7 +233,7 @@ h3 {
     content: "";
     position: absolute;
     inset: 0;
-    background: rgba(0,0,0,0.55);
+    background: rgba(0, 0, 0, 0.55);
 }
 
 .theory-hero .container {
@@ -252,7 +260,7 @@ h3 {
     content: "";
     position: absolute;
     inset: 0;
-    background: rgba(0,0,0,0.45);
+    background: rgba(0, 0, 0, 0.45);
 }
 
 .about-hero .container {
@@ -291,7 +299,8 @@ h3 {
     box-shadow: 0 20px 40px rgba(10, 20, 38, 0.1);
 }
 
-.card-about h6, .card-about strong {
+.card-about h6,
+.card-about strong {
     color: var(--dark-blue);
     margin-bottom: 1rem;
     display: block;
@@ -320,7 +329,7 @@ h3 {
     content: "";
     position: absolute;
     inset: 0;
-    background: rgba(0,0,0,0.45);
+    background: rgba(0, 0, 0, 0.45);
 }
 
 .cases-hero .container {
@@ -380,11 +389,11 @@ h3 {
 .explore-link-sm:hover {
     color: #38BDF8;
 }
+
 .text-muted {
     color: var(--text-color) !important;
     line-height: 1.6;
 }
-
 
 
 
@@ -405,12 +414,73 @@ h3 {
     content: "";
     position: absolute;
     inset: 0;
-    background: rgba(0,0,0,0.45);
+    background: rgba(0, 0, 0, 0.45);
 }
 
 .exercises-hero .container {
     position: relative;
     z-index: 2;
+}
+
+
+
+/* CONTENT & PRIVACY */
+.theory-title {
+    font-weight: 900;
+    letter-spacing: -0.04em;
+    line-height: 1;
+    font-size: clamp(3rem, 8vw, 5rem);
+    margin-bottom: 2rem;
+}
+
+.index-item {
+    transition: background-color 0.3s ease;
+}
+
+.index-item .module-number {
+    min-width: 40px;
+    color: var(--cyan-accent);
+}
+
+.privacy-content h4 {
+    font-size: 1.25rem;
+    letter-spacing: -0.02em;
+    color: var(--dark-blue);
+}
+
+.content-body p,
+.privacy-content p {
+    margin-bottom: 1.5rem;
+    font-size: 1.05rem;
+}
+
+.text-cyan {
+    color: var(--cyan-accent) !important;
+    font-size: 0.75rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    font-weight: 700;
+    transition: none;
+}
+
+.text-cyan:hover {
+    opacity: 1;
+    color: var(--cyan-accent) !important;
+}
+
+.index-link {
+    color: var(--dark-blue) !important;
+    font-size: 0.7rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.index-link:hover {
+    color: var(--cyan-accent) !important;
+    opacity: 0.8;
 }
 
 
@@ -445,5 +515,3 @@ footer a:hover {
 .letter-spacing {
     letter-spacing: 0.2em;
 }
-
-
