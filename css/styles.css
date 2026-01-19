@@ -70,7 +70,7 @@ h3 {
 /* Hero */
 .hero {
     width: 100%;
-    min-height: 95vh;
+    min-height: 93vh;
     background-image: url("../images/portada.jpeg");
     background-size: cover;
     background-position: center;
@@ -327,6 +327,35 @@ h3 {
     position: relative;
     z-index: 2;
 }
+
+
+.case-image-container {
+    overflow: hidden;
+    border-radius: 16px;
+    background: #f8fafc;
+}
+
+.case-image-container img {
+    transition: transform 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.case-image-container:hover img {
+    transform: scale(1.05);
+}
+
+.text-cyan {
+    color: var(--numbers-color) !important;
+}
+
+.text-muted {
+    color: var(--text-color) !important;
+    line-height: 1.6;
+}
+
+
 
 
 /* EXERCISES HERO */
