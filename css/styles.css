@@ -19,9 +19,14 @@
     letter-spacing: 0.15em;
 }
 
+html {
+    scroll-behavior: smooth !important;
+}
+
 body {
     font-family: 'Inter', sans-serif;
     padding-top: 60px;
+    -webkit-font-smoothing: antialiased;
 }
 
 
@@ -63,7 +68,7 @@ h3 {
 .navbar-nav .nav-link {
     color: var(--dark-blue);
     font-weight: 500;
-    transition: color 0.3s ease;
+    transition: all 0.3s ease-in-out; 
 }
 
 .navbar-nav .nav-link:hover {
@@ -127,6 +132,7 @@ h3 {
     text-decoration: none;
     color: #c7c7c7;
     border-bottom: 1px solid #c7c7c7;
+    transition: all 0.3s ease;
 }
 
 .explore-link:hover {
@@ -195,7 +201,6 @@ h3 {
 .theory-card {
     background: var(--light-blue);
     border: 1px solid var(--border-color) !important;
-    border-bottom: 5px solid var(--cyan-accent) !important;
     padding: 1.5rem 1.2rem;
     height: auto;
     border-radius: 10px;
@@ -211,7 +216,6 @@ h3 {
     transform: translateY(-10px);
     border-color: var(--border-color);
     background-color: var(--cyan-accent);
-    border-bottom-color: #2295c6 !important;
     box-shadow: 0 20px 40px rgba(15, 23, 42, 0.1);
 }
 
@@ -233,7 +237,7 @@ h3 {
     content: "";
     position: absolute;
     inset: 0;
-    background: rgba(0, 0, 0, 0.55);
+    background: rgba(0, 0, 0, 0.45);
 }
 
 .theory-hero .container {
@@ -388,11 +392,6 @@ h3 {
 
 .explore-link-sm:hover {
     color: #38BDF8;
-}
-
-.text-muted {
-    color: var(--text-color) !important;
-    line-height: 1.6;
 }
 
 
