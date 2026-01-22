@@ -529,7 +529,12 @@ RESPONSIVE SYSTEM
         text-align: left !important;
     }
 
-    h2, h3, .theory-title {
+    .h2 {
+        font-size: 4.5rem !important;
+    }
+
+    .h3,
+    .theory-title {
         font-size: 3.5rem !important;
         text-align: left !important;
     }
@@ -558,10 +563,20 @@ RESPONSIVE SYSTEM
         text-align: left !important;
     }
 
-    h2, .theory-title, .mission-ribbon h2 {
+    .h2 {
+        font-size: 4.5rem !important;
+    }
+
+    .h3,
+    .theory-title {
         font-size: 2.5rem !important;
         letter-spacing: -0.02em;
         text-align: left !important;
+    }
+
+    .mission-ribbon h2 {
+        font-size: 2rem !important;
+        text-align: center !important;
     }
 
     .hero-subtitle {
@@ -590,7 +605,8 @@ RESPONSIVE SYSTEM
         display: block;
     }
 
-    .content-section, .footer {
+    .content-section,
+    .footer {
         text-align: left !important;
     }
 
@@ -598,7 +614,10 @@ RESPONSIVE SYSTEM
         margin-bottom: 2rem;
     }
 
-    p, .text-muted, .main-description, .module-text {
+    p,
+    .text-muted,
+    .main-description,
+    .module-text {
         text-align: left !important;
         font-size: 1rem !important;
     }
