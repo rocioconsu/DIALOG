@@ -526,10 +526,12 @@ RESPONSIVE SYSTEM
 @media (max-width: 992px) {
     h1.hero-title {
         font-size: 6rem !important;
+        text-align: left !important;
     }
 
     h2, h3, .theory-title {
         font-size: 3.5rem !important;
+        text-align: left !important;
     }
 
     .hero-subtitle {
@@ -538,6 +540,10 @@ RESPONSIVE SYSTEM
 
     .content-section {
         padding: 6rem 0 !important;
+    }
+
+    .explore-link {
+        text-align: left !important;
     }
 }
 
