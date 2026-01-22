@@ -508,7 +508,82 @@ footer a:hover {
     color: #38BDF8;
 }
 
-/* Utilities */
 .letter-spacing {
     letter-spacing: 0.2em;
+}
+
+/* ==========================================================================
+   RESPONSIVE DESIGN (Media Queries)
+   ========================================================================== */
+
+/* Tablets (Less than 992px) */
+@media (max-width: 992px) {
+    h1, .hero-title {
+        font-size: clamp(4rem, 15vw, 8rem);
+    }
+
+    h2, h3, .theory-title {
+        font-size: 3.5rem !important;
+    }
+
+    .hero-subtitle {
+        font-size: 2.8rem;
+    }
+
+    .content-section {
+        padding: 6rem 0; 
+    }
+}
+
+/* Phones (Less than 768px) */
+@media (max-width: 768px) {
+    body {
+        padding-top: 50px; 
+    }
+
+    h2, .theory-title {
+        font-size: 2.5rem !important;
+        letter-spacing: -0.02em;
+    }
+
+    .hero-subtitle {
+        font-size: 2rem;
+        line-height: 1.2;
+    }
+
+    .module-title {
+        font-size: 1.5rem;
+    }
+
+    /* H5P containers */
+    .ratio-16x9 {
+        --bs-aspect-ratio: 100%;
+    }
+
+    .hero, .content-section, .footer {
+        text-align: center;
+    }
+
+    .hero {
+        align-items: center;
+    }
+
+    .explore-link {
+        margin-bottom: 2rem;
+    }
+}
+
+/* Very small devices (Less than 480px) */
+@media (max-width: 480px) {
+    h1, .hero-title {
+        font-size: 3.5rem !important;
+    }
+
+    .theory-title {
+        font-size: 2.2rem !important;
+    }
+    
+    p, .module-text, .text-muted {
+        text-align: left !important;
+    }
 }
