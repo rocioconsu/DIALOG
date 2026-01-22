@@ -549,20 +549,24 @@ RESPONSIVE SYSTEM
 
     h1.hero-title {
         font-size: 4rem !important;
+        text-align: left !important;
     }
 
     h2, .theory-title, .mission-ribbon h2 {
         font-size: 2.5rem !important;
         letter-spacing: -0.02em;
+        text-align: left !important;
     }
 
     .hero-subtitle {
         font-size: 1.8rem !important;
         margin-bottom: 1.5rem;
+        text-align: left !important;
     }
 
     .module-title {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
+        text-align: left !important;
     }
 
     /* H5P Adjustments */
@@ -575,12 +579,13 @@ RESPONSIVE SYSTEM
         padding: 120px 0 60px 0;
         height: auto !important;
         min-height: 100vh;
-        text-align: center;
+        text-align: left !important;
         align-items: center;
+        display: block;
     }
 
     .content-section, .footer {
-        text-align: center;
+        text-align: left !important;
     }
 
     .explore-link {
@@ -602,10 +607,12 @@ RESPONSIVE SYSTEM
 @media (max-width: 480px) {
     h1.hero-title {
         font-size: 3.2rem !important;
+        text-align: left !important;
     }
 
     .theory-title {
         font-size: 2rem !important;
+        text-align: left !important;
     }
 
     .card-about {
