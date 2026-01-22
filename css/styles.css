@@ -68,7 +68,7 @@ h3 {
 .navbar-nav .nav-link {
     color: var(--dark-blue);
     font-weight: 500;
-    transition: all 0.3s ease-in-out; 
+    transition: all 0.3s ease-in-out;
 }
 
 .navbar-nav .nav-link:hover {
@@ -80,7 +80,7 @@ h3 {
     font-weight: 700;
 }
 
-/* Hero */
+/* Index Hero */
 .hero {
     width: 100%;
     min-height: 93vh;
@@ -138,6 +138,12 @@ h3 {
 .explore-link:hover {
     color: var(--cyan-accent);
     border-color: var(--cyan-accent);
+}
+
+.main-description {
+    line-height: 1.9;
+    font-size: 1.1rem;
+    max-width: 850px;
 }
 
 /* Sections */
@@ -513,13 +519,13 @@ footer a:hover {
 }
 
 /* ==========================================================================
-   RESPONSIVE DESIGN (Media Queries)
+RESPONSIVE SYSTEM
    ========================================================================== */
 
-/* Tablets (Less than 992px) */
+/* --- Tablets (Less than 992px) --- */
 @media (max-width: 992px) {
-    h1, .hero-title {
-        font-size: clamp(4rem, 15vw, 8rem);
+    h1.hero-title {
+        font-size: 6rem !important;
     }
 
     h2, h3, .theory-title {
@@ -527,63 +533,82 @@ footer a:hover {
     }
 
     .hero-subtitle {
-        font-size: 2.8rem;
+        font-size: 2.5rem !important;
     }
 
     .content-section {
-        padding: 6rem 0; 
+        padding: 6rem 0 !important;
     }
 }
 
-/* Phones (Less than 768px) */
+/* --- Phones (Less than 768px) --- */
 @media (max-width: 768px) {
     body {
-        padding-top: 50px; 
+        padding-top: 50px;
     }
 
-    h2, .theory-title {
+    h1.hero-title {
+        font-size: 4rem !important;
+    }
+
+    h2, .theory-title, .mission-ribbon h2 {
         font-size: 2.5rem !important;
         letter-spacing: -0.02em;
     }
 
     .hero-subtitle {
-        font-size: 2rem;
-        line-height: 1.2;
+        font-size: 1.8rem !important;
+        margin-bottom: 1.5rem;
     }
 
     .module-title {
         font-size: 1.5rem;
     }
 
-    /* H5P containers */
+    /* H5P Adjustments */
     .ratio-16x9 {
         --bs-aspect-ratio: 100%;
     }
 
-    .hero, .content-section, .footer {
+    /* Hero for mobile */
+    .hero {
+        padding: 120px 0 60px 0;
+        height: auto !important;
+        min-height: 100vh;
         text-align: center;
+        align-items: center;
     }
 
-    .hero {
-        align-items: center;
+    .content-section, .footer {
+        text-align: center;
     }
 
     .explore-link {
         margin-bottom: 2rem;
     }
+
+    p, .text-muted, .main-description, .module-text {
+        text-align: left !important;
+        font-size: 1rem !important;
+    }
+
+    .navbar-nav {
+        padding: 1rem 0;
+        text-align: center;
+    }
 }
 
-/* Very small devices (Less than 480px) */
+/* --- Small devices (Less than 480px) --- */
 @media (max-width: 480px) {
-    h1, .hero-title {
-        font-size: 3.5rem !important;
+    h1.hero-title {
+        font-size: 3.2rem !important;
     }
 
     .theory-title {
-        font-size: 2.2rem !important;
+        font-size: 2rem !important;
     }
-    
-    p, .module-text, .text-muted {
-        text-align: left !important;
+
+    .card-about {
+        padding: 1.5rem !important;
     }
 }
