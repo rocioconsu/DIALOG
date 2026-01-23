@@ -550,6 +550,11 @@ RESPONSIVE SYSTEM
     .explore-link {
         text-align: left !important;
     }
+
+    .footer .container {
+        text-align: center !important;
+        align-items: center;
+    }
 }
 
 /* --- Phones (Less than 768px) --- */
@@ -574,9 +579,13 @@ RESPONSIVE SYSTEM
         text-align: left !important;
     }
 
-    .mission-ribbon h2 {
-        font-size: 2rem !important;
+    .mission-ribbon,
+    .mission-ribbon h2,
+    .main-description,
+    .mission-ribbon .text-cyan {
         text-align: center !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
     }
 
     .hero-subtitle {
@@ -600,8 +609,6 @@ RESPONSIVE SYSTEM
         padding: 120px 0 60px 0;
         height: auto !important;
         min-height: 100vh;
-        text-align: left !important;
-        align-items: center;
         display: block;
     }
 
@@ -626,6 +633,11 @@ RESPONSIVE SYSTEM
         padding: 1rem 0;
         text-align: center;
     }
+
+    .footer .container {
+        text-align: center !important;
+        align-items: center;
+    }
 }
 
 /* --- Small devices (Less than 480px) --- */
@@ -642,5 +654,10 @@ RESPONSIVE SYSTEM
 
     .card-about {
         padding: 1.5rem !important;
+    }
+
+    .footer .container {
+        text-align: center !important;
+        align-items: center;
     }
 }
